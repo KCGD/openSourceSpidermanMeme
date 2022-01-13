@@ -19,7 +19,9 @@ Clone the repository and load the meme
 git clone https://github.com/KCGD/openSourceSpidermanMeme.git
 cd openSourceSpidermanMeme
 ```
-Open the meme in gimp -> File -> Export -> Save file
+
+Open the meme by going in your cmdline and typing `gimp open\ source\ meme.xcf`
+Export your changes via File -> Export -> Choose Location -> Save
 
 
 ## License
