@@ -1,5 +1,7 @@
 meme:
-	convert -flatten open\ source\ meme.xcf open_source_meme.png
+	@if [ ! -d "Build" ]; then mkdir "Build"; fi
+
+	convert -flatten open\ source\ meme.xcf Build/open_source_meme.png
 	echo Meme compiled successfully.
 
 post: meme

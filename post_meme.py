@@ -37,7 +37,7 @@ def post(reddit):
 	if sub is None:
 		sub = "linuxmemes"
 	print(f"Posting meme to {sub}...")
-	reddit.subreddit(sub).submit_image(title, "open_source_meme.png")
+	reddit.subreddit(sub).submit_image(title, "Build/open_source_meme.png")
 	print("Meme has been posted.")
 
 if __name__ == "__main__":
