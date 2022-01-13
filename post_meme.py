@@ -1,6 +1,12 @@
-import praw
 import os
 
+try:
+    import praw
+except ModuleNotFoundError:
+    print('Praw (python reddit api wrapper) is not installed. Installing it now...')
+    os.system('python3 -m pip install praw')
+    print('Praw installed. Please run the script again.')
+    exit()
 pus = ""
 secret = ""
 
