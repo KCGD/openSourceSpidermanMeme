@@ -28,6 +28,26 @@ cd openSourceSpidermanMeme
 Open the meme by going in your cmdline and typing `gimp open\ source\ meme.xcf`
 Export your changes via File -> Export -> Choose Location -> Save
 
+Alternatively install ImageMagick 7 and build the meme using make:
+```bash
+make
+```
+
+## Post to Reddit
+
+First, install python3. Then, install praw:
+```bash
+pip3 install praw
+```
+
+Then you can make the post using make:
+```bash
+make post
+```
+By default this posts the meme to r/linuxmemes. To post to a different subreddit set the SUBREDDIT variable:
+```bash
+make post SUBREDDIT=windowsmemes # posts to r/windowsmemes
+```
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
