@@ -40,8 +40,6 @@ def post(reddit):
 	reddit.subreddit(sub).submit_image(title, "open_source_meme.png")
 	print("Meme has been posted.")
 
-print()
-
 if __name__ == "__main__":
 	setupSecretAndPUS()
 	login()
