@@ -4,7 +4,12 @@ Haha spiderman make a presentation lol
 
 ## Install gimp
 
-This meme requires gimp, install through flatpak
+This meme requires gimp, install through install_deps.sh
+
+```bash
+chmod +x install_deps.sh && ./install_deps.sh
+```
+Alternativley, Install gimp through flatpak
 
 ```bash
 wget "https://flathub.org/repo/appstream/org.gimp.GIMP.flatpakref"
@@ -14,7 +19,7 @@ flatpak install org.gimp.GIMP.flatpakref
 ```
 ## Build the meme
 
-Clone the repository and load the meme
+Clone the repository and load the meme into gimp
 ```bash
 git clone https://github.com/KCGD/openSourceSpidermanMeme.git
 cd openSourceSpidermanMeme
