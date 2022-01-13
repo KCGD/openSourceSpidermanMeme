@@ -17,6 +17,8 @@ wget "https://flathub.org/repo/appstream/org.gimp.GIMP.flatpakref"
 ```bash
 flatpak install org.gimp.GIMP.flatpakref
 ```
+Load the meme in GIMP and edit however you wish.
+
 ## Build the meme using GIMP
 
 Clone the repository and load the meme into gimp
