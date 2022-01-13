@@ -17,7 +17,7 @@ wget "https://flathub.org/repo/appstream/org.gimp.GIMP.flatpakref"
 ```bash
 flatpak install org.gimp.GIMP.flatpakref
 ```
-## Build the meme
+## Build the meme using GIMP
 
 Clone the repository and load the meme into gimp
 ```bash
@@ -28,19 +28,30 @@ cd openSourceSpidermanMeme
 Open the meme by going in your cmdline and typing `gimp open\ source\ meme.xcf`
 Export your changes via File -> Export -> Choose Location -> Save
 
-Alternatively install ImageMagick 7 and build the meme using make:
+## Build the meme using make
+
+Install ImageMagick 7:
 ```bash
-make
+chmod +x install_deps.sh && ./install_deps.sh -m
+```
+This installs ImageMagick 7 using pacman on Arch and derivatives or [imei](https://github.com/SoftCreatR/imei) on other distros.
+
+Then, build the meme using make:
+```bash
+make # or make meme
 ```
 
 ## Post to Reddit
 
-First, install python3. Then, install praw:
+First, install python3 and pip3 (if they aren't installed already). Then, install praw:
 ```bash
 pip3 install praw
 ```
-
-Then you can make the post using make:
+Or use the installer:
+```bash
+chmod +x install_deps.sh && ./install_deps.sh -p
+```
+Then you can create the post using make:
 ```bash
 make post
 ```
