@@ -28,6 +28,10 @@ cd openSourceSpidermanMeme
 Open the meme by going in your cmdline and typing `gimp open\ source\ meme.xcf`
 Export your changes via File -> Export -> Choose Location -> Save
 
+Alternatively install ImageMagick 7 and build the meme using make:
+```bash
+make
+```
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
