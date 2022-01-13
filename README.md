@@ -30,17 +30,17 @@ Export your changes via File -> Export -> Choose Location -> Save
 
 Alternatively install ImageMagick 7 and build the meme using make:
 ```bash
-make
+make # or make meme
 ```
 
 ## Post to Reddit
 
-First, install python3. Then, install praw:
+First, install python3 and pip3 (if they aren't installed already). Then, install praw:
 ```bash
 pip3 install praw
 ```
 
-Then you can make the post using make:
+Then you can create the post using make:
 ```bash
 make post
 ```
