@@ -6,3 +6,8 @@ meme:
 
 post: meme
 	python3 post_meme.py
+
+install: meme
+	@if [ ! -d "${HOME}/Pictures" ]; then mkdir "${HOME}/Pictures"; fi
+	@if [ ! -d "${HOME}/Pictures/Memes" ]; then mkdir "${HOME}/Pictures/Memes"; fi
+	cp Build/open_source_meme.png ${HOME}/Pictures/Memes/spiderman-meme.png

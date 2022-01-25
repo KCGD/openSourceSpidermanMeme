@@ -43,6 +43,12 @@ Then, build the meme using make:
 make # or make meme
 ```
 
+Or, install the meme:
+```bash
+make install
+```
+This builds the meme and copies it to `~/Pictures/Memes/spiderman-meme.png`.
+
 ## Post to Reddit
 
 First, install python3 and pip3 (if they aren't installed already). Then, install praw:
